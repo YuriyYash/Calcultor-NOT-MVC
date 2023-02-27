@@ -1,0 +1,86 @@
+body {
+  font-size: 64px;
+  background-color: black;
+}
+
+button {
+  font-size: 26px;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+}
+
+.item-header {
+  grid-area: header;
+  color: white;
+}
+
+#globalAnswer {
+  background-color: black;
+  font-size: 1px;
+}
+
+#currentValue {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: span 4;
+  text-align: right;
+}
+
+button.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+button.orange {
+  background-color: orange;
+}
+
+button.orange:focus {
+  background-color: white;
+  color: gold
+}
+
+button.silver {
+  background-color: silver;
+  color: black;
+}
+
+button.silver:focus {
+  background-color: white;
+  color: black
+}
+
+button.equals {
+  background-color: orange;
+}
+
+button.equals:focus {
+  background-color: white;
+  color: gold
+}
+
+button.zero {
+  text-align: left;
+  padding-left: 32px;
+  grid-row: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border-radius: 50px;
+}
